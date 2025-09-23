@@ -1,1 +1,7 @@
-// Vous devez complétéer ce fichier
+@startuml RCDU pour redémarrerJeu
+skinparam style strictuml
+skinparam backgroundcolor transparent
+skinparam defaultfontname Verdana
+ -> ":JeuDeDes" : redémarrerJeu()
+":JeuDeDes" -> "joueurs: Maps<String,Joueur>" : clear()
+@enduml
